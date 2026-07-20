@@ -6,3 +6,7 @@ pre{
 tilte{
     color: maroon
 }
+
+a:hover{
+    color: pink
+}
