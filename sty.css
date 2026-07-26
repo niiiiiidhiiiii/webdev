@@ -1,0 +1,10 @@
+.hw  p:first-child {
+    color: red;
+    background-color: yellow;
+}
+
+.hw p {
+    background-color: blue;
+    color: white
+}
+
