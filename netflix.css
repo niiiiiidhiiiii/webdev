@@ -1,42 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .main {
-   background-image:url(assest/IN-en-20260720-TRIFECTA-perspective_ca5664c9-e7ca-45da-9d85-173740dbae71_large.jpg);
-   height: 100vh;
-   position: relative;
-   display: flex;
-   flex-wrap: row;
+  background-image: url(assest/IN-en-20260720-TRIFECTA-perspective_ca5664c9-e7ca-45da-9d85-173740dbae71_large.jpg);
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: max(1000px, 100vw);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.main .box{
-    height: 100vh;
-    width: 100%;
-    filter: opacity(0.5);
-    position: absolute;
-    top: 0;
-    background-color: black;
-    
+nav {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-content: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 88px;
+  position: relative;
 }
 
-nav{
-    display: flex;
-    
-    flex-wrap: wrap;
-
-    align-content: center;
-    justify-content: space-around;
-    background-color: black;
-    width: 100%;
-    height: 88px;
-    
+.main .box {
+  height: 100vh;
+  width: 100%;
+  filter: opacity(0.7);
+  position: absolute;
+  top: 0;
+  background-color: black;
 }
 
-nav .but{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+nav img {
+  position: relative;
+  z-index: 20;
 }
 
+nav button {
+  padding: 5px;
+  position: relative;
+  z-index: 20;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
