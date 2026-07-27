@@ -51,3 +51,56 @@ nav button {
   background-color: red;
   color: white;
 }
+.white {
+  background-color: transparent;
+  color: white;
+  border-color: rgb(159, 164, 169);
+  border-radius: 0px;
+}
+
+.text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  z-index: 10;
+  align-items: center;
+  text-size-adjust: 100%;
+  font-family:
+    "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
+}
+
+.text> :first-child {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.text> :nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  flex-wrap: wrap;
+  font-family:
+    "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
+}
+
+.text> :nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+}
+
+/* div>input{
+    /* padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+} */ 
