@@ -3,15 +3,17 @@
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
 .main {
   background-image: url(assest/IN-en-20260720-TRIFECTA-perspective_ca5664c9-e7ca-45da-9d85-173740dbae71_large.jpg);
   background-position: center center;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: max(1000px, 100vw);
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+   background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+  
 }
 
 nav {
@@ -20,7 +22,7 @@ nav {
   flex-wrap: wrap;
 
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 100%;
   height: 88px;
@@ -37,8 +39,11 @@ nav {
 }
 
 nav img {
+  display: flex;
   position: relative;
   z-index: 20;
+  justify-content: space-around;
+  height: 40px;
 }
 
 nav button {
@@ -59,6 +64,7 @@ nav button {
 }
 
 .text {
+  gap: 20px;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -71,9 +77,10 @@ nav button {
   text-size-adjust: 100%;
   font-family:
     "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
+    overflow: auto;
 }
 
-.text> :first-child {
+.text > :first-child {
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
@@ -81,7 +88,7 @@ nav button {
   flex-wrap: wrap;
 }
 
-.text> :nth-child(2) {
+.text > :nth-child(2) {
   font-size: 20px;
   font-weight: 500;
   line-height: normal;
@@ -91,16 +98,45 @@ nav button {
     "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
 }
 
-.text> :nth-child(3) {
+.text > :nth-child(3) {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
 }
 
-/* div>input{
-    /* padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-} */ 
+.signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div > input {
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 20px;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: transparent;
+  border-color: white;
+  
+}
+
+div > button {
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  font-size: 24px;
+  border-color: transparent;
+
+  
+}
+
+
