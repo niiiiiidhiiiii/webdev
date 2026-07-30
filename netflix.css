@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:
+    "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
 }
 
 body {
@@ -10,27 +12,30 @@ body {
 .main {
   background-image: url(assest/IN-en-20260720-TRIFECTA-perspective_ca5664c9-e7ca-45da-9d85-173740dbae71_large.jpg);
   background-position: center center;
-   background-size: max(1200px, 100vw);
-    background-repeat: no-repeat;
-    height: 644px;
-  
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
 }
 
 nav {
-  display: flex;
+   display: flex;
 
   flex-wrap: wrap;
 
   align-content: center;
-  justify-content: space-between;
 
-  width: 100%;
+  justify-content: space-around;
+
+  max-width: 100%;
   height: 88px;
-  position: relative;
+  position: relative; 
+  z-index: 20;
+  gap: 700px;
+  
 }
 
 .main .box {
-  height: 100vh;
+  height: 644px;
   width: 100%;
   filter: opacity(0.7);
   position: absolute;
@@ -38,29 +43,22 @@ nav {
   background-color: black;
 }
 
-nav img {
-  display: flex;
-  position: relative;
-  z-index: 20;
-  justify-content: space-around;
-  height: 40px;
-}
 
-nav button {
-  padding: 5px;
-  position: relative;
-  z-index: 20;
-}
 
 .red {
   background-color: red;
   color: white;
+  border-radius: 4px;
+    padding: 4px 9px;
+    font-weight: bold;
 }
 .white {
   background-color: transparent;
   color: white;
   border-color: rgb(159, 164, 169);
-  border-radius: 0px;
+  border-radius: 4px;
+    padding: 4px 13px;
+    font-weight: bold;
 }
 
 .text {
@@ -75,9 +73,7 @@ nav button {
   z-index: 10;
   align-items: center;
   text-size-adjust: 100%;
-  font-family:
-    "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
-    overflow: auto;
+  text-align: center;
 }
 
 .text > :first-child {
@@ -105,25 +101,18 @@ nav button {
   font-style: normal;
 }
 
-.signup{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-div > input {
+.main input {
   padding-bottom: 15px;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 207px;
   padding-top: 20px;
   text-align: left;
   border-radius: 4px;
   font-size: 16px;
   background-color: transparent;
   border-color: white;
-  
 }
-
 div > button {
   padding-bottom: 12px;
   padding-left: 24px;
@@ -135,8 +124,4 @@ div > button {
   border-radius: 4px;
   font-size: 24px;
   border-color: transparent;
-
-  
 }
-
-
