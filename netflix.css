@@ -7,6 +7,7 @@
 
 body {
   background-color: black;
+  color: white;
 }
 
 .main {
@@ -124,4 +125,31 @@ div > button {
   border-radius: 4px;
   font-size: 24px;
   border-color: transparent;
+}
+
+.curve-in{
+  height: 10vh;
+  width: 100%;
+  background: linear-gradient(to right, black, #d952e0, red, #d952e0, black);
+  position: relative;
+  top: 90%;
+
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  
+}
+
+.curve-out{
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  background: radial-gradient(ellipse at 50% 0,rgb(97, 97, 238),black 50%);
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+
+.curve{
+  position:relative;
+  top: 80%;
 }
