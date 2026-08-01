@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-   display: flex;
+  display: flex;
 
   flex-wrap: wrap;
 
@@ -29,10 +29,9 @@ nav {
 
   max-width: 100%;
   height: 88px;
-  position: relative; 
+  position: relative;
   z-index: 20;
   gap: 700px;
-  
 }
 
 .main .box {
@@ -44,22 +43,20 @@ nav {
   background-color: black;
 }
 
-
-
 .red {
   background-color: red;
   color: white;
   border-radius: 4px;
-    padding: 4px 9px;
-    font-weight: bold;
+  padding: 4px 9px;
+  font-weight: bold;
 }
 .white {
   background-color: transparent;
   color: white;
   border-color: rgb(159, 164, 169);
   border-radius: 4px;
-    padding: 4px 13px;
-    font-weight: bold;
+  padding: 4px 13px;
+  font-weight: bold;
 }
 
 .text {
@@ -102,7 +99,6 @@ nav {
   font-style: normal;
 }
 
-
 .main input {
   padding-bottom: 15px;
   padding-left: 16px;
@@ -113,6 +109,7 @@ nav {
   font-size: 16px;
   background-color: transparent;
   border-color: white;
+  color: white;
 }
 div > button {
   padding-bottom: 12px;
@@ -127,7 +124,7 @@ div > button {
   border-color: transparent;
 }
 
-.curve-in{
+.curve-in {
   height: 10vh;
   width: 100%;
   background: linear-gradient(to right, black, #d952e0, red, #d952e0, black);
@@ -136,20 +133,55 @@ div > button {
 
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
-  
 }
 
-.curve-out{
+.curve-out {
   height: 90%;
   width: 100%;
   position: absolute;
   top: 10%;
-  background: radial-gradient(ellipse at 50% 0,rgb(97, 97, 238),black 50%);
+  background: radial-gradient(ellipse at 50% 0, rgb(97, 97, 238), black 50%);
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
 }
 
-.curve{
-  position:relative;
+.curve {
+  position: relative;
   top: 80%;
+}
+
+.com {
+  position: relative;
+  top: 80%;
+}
+.com > p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 25px;
+  padding-left: 160px;
+}
+
+
+
+.slider{
+    display:flex;
+    gap:20px;
+    overflow-x:auto; 
+    position: relative;
+    top: 90%;
+    
+
+}
+
+.item{
+    position:relative;
+    flex-shrink:0;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.item img{
+    width:180px;
+    border-radius:12px;
 }
