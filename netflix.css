@@ -164,42 +164,47 @@ div > button {
 .slider {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
+ 
   position: relative;
   top: 90%;
-  align-content: space-around;
-  justify-content: space-around;
+  border-radius: 8px 8px 8px 8px;
   scroll-behavior: smooth;
   overflow-x: scroll;
-  width: 1005 - 16%;
+  width: 77%;
+  
+  margin: 0 auto;
+  
 }
 
 .item img {
   width: 180px;
-  border-radius: 12px;
-  padding-left: 20px;
+  border-radius: 8px;
+  
   display: block;
   object-fit: cover;
+  
 }
 
 .item {
   position: relative; 
   display: flex;
   flex: 0 0 auto;
+  
 }
 
 .griditem {
   position: absolute;
-  bottom: 10px;
-  left: -10px;
+  bottom: 8px;
+  left: -8px;
   font-size: 100px;
   font-weight: 800;
   -webkit-text-stroke: 2px white; 
   color: black; 
-  z-index: -1; 
+  z-index: 1; 
   line-height: 1;
 }
 
 .slider::-webkit-scrollbar{
   display: none;
 }
+
