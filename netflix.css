@@ -165,14 +165,13 @@ div > button {
   display: flex;
   gap: 20px;
  
-  position: relative;
-  top: 90%;
+  
   border-radius: 8px 8px 8px 8px;
   scroll-behavior: smooth;
   overflow-x: scroll;
   width: 77%;
   
-  margin: 0 auto;
+  margin: 40px auto;
   
 }
 
