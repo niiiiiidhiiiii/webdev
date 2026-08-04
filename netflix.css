@@ -164,31 +164,27 @@ div > button {
 .slider {
   display: flex;
   gap: 20px;
- 
-  
+
   border-radius: 8px 8px 8px 8px;
   scroll-behavior: smooth;
   overflow-x: scroll;
   width: 77%;
-  
+
   margin: 40px auto;
-  
 }
 
 .item img {
   width: 180px;
   border-radius: 8px;
-  
+
   display: block;
   object-fit: cover;
-  
 }
 
 .item {
-  position: relative; 
+  position: relative;
   display: flex;
   flex: 0 0 auto;
-  
 }
 
 .griditem {
@@ -197,13 +193,34 @@ div > button {
   left: -8px;
   font-size: 100px;
   font-weight: 800;
-  -webkit-text-stroke: 2px white; 
-  color: black; 
-  z-index: 1; 
+  -webkit-text-stroke: 2px white;
+  color: black;
+  z-index: 1;
   line-height: 1;
 }
 
-.slider::-webkit-scrollbar{
+.slider::-webkit-scrollbar {
   display: none;
 }
 
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: auto;
+  width: 100%;
+  
+  flex-flow: wrap;
+  flex-direction: row;
+}
+.boxs {
+  width: 300px;
+  background: linear-gradient(
+    149deg,
+    rgb(25, 34, 71) 0%,
+    rgb(33, 14, 23) 96.86%
+  );
+  border-radius: 15px;
+  height: 278px;
+  margin: 8px;
+}
