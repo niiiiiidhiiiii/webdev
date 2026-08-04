@@ -170,7 +170,7 @@ div > button {
   scroll-behavior: smooth;
   overflow-x: scroll;
   width: 77%;
-overflow-y: hidden;
+  overflow-y: hidden;
   margin: 25px auto;
 }
 
@@ -207,12 +207,13 @@ overflow-y: hidden;
 .container {
   display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
+  align-items: center; /* Centers vertically */
   height: auto;
   width: 100%;
   margin-top: 16px;
   flex-flow: wrap;
   flex-direction: row;
+  margin-bottom: 45px;
 }
 .boxs {
   width: 265px;
@@ -227,27 +228,44 @@ overflow-y: hidden;
   display: flex;
   flex-direction: column;
   padding: 15px 15px;
-  position:relative;
+  position: relative;
 }
 
-.h{
+.h {
   font-size: 24px;
   font-weight: 700;
   margin-top: 16px;
 }
 
-.b{
+.b {
   font-size: 16px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 16px;
 }
 
-.sticker{
+.sticker {
   height: 65px;
   width: 65px;
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  width: 100%;
+  
+}
+.ques {
+  padding: 20px;
+  height: 47px;
+  width: 79%;
+  background-color:rgb(54 52 52);
+  margin: 2px 147px;
+  font-size: 24px;
+  font-weight: 450;
+  text-align: left center;
   
 }
