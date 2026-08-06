@@ -3,6 +3,7 @@
   padding: 0;
   font-family:
     "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
+    
 }
 
 body {
@@ -141,7 +142,8 @@ div > button {
   width: 100%;
   position: absolute;
   top: 10%;
-  background: radial-gradient(ellipse at 50% 0, rgb(97, 97, 238), black 50%);
+  background: radial-gradient(ellipse at 50% 0, rgb(106, 106, 245), black 50%);
+
   border-top-left-radius: 45%;
   border-top-right-radius: 45%;
 }
@@ -151,10 +153,6 @@ div > button {
   top: 80%;
 }
 
-/* .com {
-  position: relative;
-  top: 80%;
-} */
 .com > p {
   text-align: left;
   font-weight: 500;
@@ -179,7 +177,6 @@ div > button {
   border-radius: 8px;
 
   display: block;
-  object-fit: cover;
 }
 
 .item {
@@ -256,16 +253,17 @@ div > button {
   flex-direction: column;
   flex-flow: wrap;
   width: 100%;
-  
 }
 .ques {
   padding: 20px;
   height: 47px;
   width: 79%;
-  background-color:rgb(54 52 52);
+  background-color: rgb(54 52 52);
   margin: 2px 147px;
   font-size: 24px;
   font-weight: 450;
-  text-align: left center;
-  
+  text-align: left;
+  line-height: 2;
 }
+
+
