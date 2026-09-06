@@ -247,6 +247,8 @@ div > button {
   position: absolute;
   bottom: 10px;
   right: 10px;
+
+  
 }
 .question {
   display: flex;
@@ -264,6 +266,10 @@ div > button {
   font-weight: 450;
   text-align: left;
   line-height: 2;
+}
+
+.trend{
+  
 }
 
 
