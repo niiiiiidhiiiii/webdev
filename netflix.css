@@ -3,7 +3,6 @@
   padding: 0;
   font-family:
     "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto, Ubuntu", "sans-serif";
-    
 }
 
 body {
@@ -247,8 +246,6 @@ div > button {
   position: absolute;
   bottom: 10px;
   right: 10px;
-
-  
 }
 .question {
   display: flex;
@@ -268,8 +265,10 @@ div > button {
   line-height: 2;
 }
 
-.trend{
-  
+.trend {
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  gap: 34px;
+  margin-left: 48vh;
 }
-
-

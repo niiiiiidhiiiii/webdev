@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("Find the factorial!!");
+
+      let a = prompt("Enter the Number: ");
+    //   let fact = 1;
+
+    //   for (i = 1; i <a; i++) {
+    //     fact += fact * i;
+    //   }
+    //   console.log(fact);
+
+    let arr =[]
+    let fact = 1;
+    for(i=1; i<=a;i++){
+        fact = i
+        arr.push(fact)
+        
+    }
+    
+  let facti= arr.reduce((total, num) => total*num,1);
+  console.log(facti)
+    </script>
+  </body>
+</html>
