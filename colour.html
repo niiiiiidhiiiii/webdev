@@ -1,68 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 23px;
-        }
-        .box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 45px;
-            width: 45px;
-            border: 2px solid black; 
-        }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 45px;
+        border: 2px solid black;
+      }
     </style>
-</head>
-<body>
-    
-     <div class="container">
-        <div class="box">Box</div>
-        <div class="box">Box</div>
-        <div class="box">Box</div>
-        <div class="box">Box</div>
-        <div class="box">Box</div>
-     </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+      <div class="box">Box</div>
+    </div>
 
     <script>
-    let boxes = document.querySelectorAll(".box");
+      // let boxes = document.querySelectorAll(".box");
 
-    for (let i = 0; i < boxes.length; i++) {
+      // for (let i = 0; i < boxes.length; i++) {
 
-        let r = Math.random();
+      //     let r = Math.random();
 
-        if (r < 0.22) {
-            boxes[i].style.backgroundColor = "green";
-        }
-        else if (r < 0.33) {
-            boxes[i].style.backgroundColor = "red";
-        }
-        else if (r < 0.44) {
-            boxes[i].style.backgroundColor = "orange";
-        }
-        else if (r < 0.55) {
-            boxes[i].style.backgroundColor = "purple";
-        }
-        else if (r < 0.66) {
-            boxes[i].style.backgroundColor = "black";
-        }
-        else if (r < 0.77) {
-            boxes[i].style.backgroundColor = "yellow";
-        }
-        else if (r < 0.88) {
-            boxes[i].style.backgroundColor = "pink";
-        }
-        else {
-            boxes[i].style.backgroundColor = "blue";
-        }
-    }
-</script>
-</body>
+      //     if (r < 0.22) {
+      //         boxes[i].style.backgroundColor = "green";
+      //     }
+      //     else if (r < 0.33) {
+      //         boxes[i].style.backgroundColor = "red";
+      //     }
+      //     else if (r < 0.44) {
+      //         boxes[i].style.backgroundColor = "orange";
+      //     }
+      //     else if (r < 0.55) {
+      //         boxes[i].style.backgroundColor = "purple";
+      //     }
+      //     else if (r < 0.66) {
+      //         boxes[i].style.backgroundColor = "black";
+      //     }
+      //     else if (r < 0.77) {
+      //         boxes[i].style.backgroundColor = "yellow";
+      //     }
+      //     else if (r < 0.88) {
+      //         boxes[i].style.backgroundColor = "pink";
+      //     }
+      //     else {
+      //         boxes[i].style.backgroundColor = "blue";
+      //     }
+      // }
+     
+      let boxes = document.querySelector(".container").children;
+
+      function randomcolour() {
+        let r = Math.ceil( Math.random() * 255);
+        let b = Math.ceil( Math.random() * 255);
+        let g = Math.ceil( Math.random() * 255);
+        return `rgb(${r}, ${b},${g})`;
+      }
+
+      Array.from(boxes).forEach((e) => {
+        e.style.backgroundColor = randomcolour();
+        e.style.color = randomcolour();
+      });
+    </script>
+  </body>
 </html>
